@@ -7,12 +7,12 @@ test('login and logout using POM', async ({ page }) => {
 
   const loginPage = new LoginPage(page);
   const securePage = new SecurePage(page);
-  let username = process.env.APP_USERNAME!;
-  let password = process.env.APP_PASSWORD!;
+  // let username = process.env.APP_USERNAME!;
+  // let password = process.env.APP_PASSWORD!;
   
 
   await loginPage.navigate();
-  await loginPage.login(username,password);
+  await loginPage.login('tomsmith', 'SuperSecretPassword!');
 
   await expect(loginPage.message)
     .toContainText('You logged into a secure area!');
