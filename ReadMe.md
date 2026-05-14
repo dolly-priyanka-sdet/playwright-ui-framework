@@ -24,3 +24,19 @@ It follows modern SDET practices such as Page Object Model (POM), environment-ba
 ---
 
 ## 📁 Project Structure
+playwright-ui-framework/
+│
+├── pages/                     # Page Objects (UI locators & reusable methods)
+│   └── LoginPage.ts
+│
+├── tests/                     # Test scenarios
+│   └── login.spec.ts
+│
+├── data/                      # Test data files (optional)
+│
+├── playwright.config.ts       # Playwright configuration
+├── package.json
+├── tsconfig.json
+├── .env                       # Environment variables (not committed)
+├── .gitignore
+└── README.md
